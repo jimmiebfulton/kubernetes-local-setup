@@ -7,7 +7,7 @@
   
 ** K3d setup
 
-* [[[[https://doc.traefik.io/traefik/getting-started/install-traefik/]]][Install Traefik Dashboard]]
+* [[https://doc.traefik.io/traefik/getting-started/install-traefik/][Install Traefik]]
 
 
 #+begin_src yaml

@@ -1,17 +1,15 @@
 #+title: Kubernetes Local Setup
 #+author: Jimmie Fulton
 
-#+date: <2021-06-21 Mon>
-
 * Kubernetes Local Setup
   
 ** K3d setup
 
 * [[https://doc.traefik.io/traefik/getting-started/install-traefik/][Install Traefik]]
 
-
+#+FILENAME: dashboard.yml
 #+begin_src yaml
-# dashboard.yaml
+---
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
@@ -25,9 +23,8 @@ spec:
       services:
         - name: api@internal
           kind: TraefikService
-
 #+end_src
 
-#+begin_src shell
+#+begin_src bash
 kubectl apply -f dashboard.yml
 #+end_src

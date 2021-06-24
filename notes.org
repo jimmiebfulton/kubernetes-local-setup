@@ -26,6 +26,7 @@ spec:
           kind: TraefikService
 #+end_src
 
-#+begin_src bash
+#+begin_src sh
 kubectl apply -f dashboard.yml
 #+end_src
+

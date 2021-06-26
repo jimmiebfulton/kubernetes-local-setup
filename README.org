@@ -1,8 +1,11 @@
 #+title: Kubernetes Local Setup
 #+author: Jimmie Fulton
 
-* Kubernetes Local Setup
-  
+#+NAME: Install Kind
+#+begin_src shell
+brew install kind
+#+end_src
+
 ** K3d setup
 
 * [[https://doc.traefik.io/traefik/getting-started/install-traefik/][Install Traefik]]
@@ -26,7 +29,9 @@ spec:
           kind: TraefikService
 #+end_src
 
-#+begin_src sh
-kubectl apply -f dashboard.yml
+#+begin_src shell
+  kubectl apply -f dashboard.yml
 #+end_src
+
+#+RESULTS:
 

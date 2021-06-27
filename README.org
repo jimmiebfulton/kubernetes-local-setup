@@ -2,8 +2,13 @@
 #+author: Jimmie Fulton
 
 #+NAME: Install Kind
-#+begin_src shell
+#+begin_src shell :results output
 brew install kind
+#+end_src
+
+#+NAME: Install Tilt
+#+begin_src shell
+brew install tilt-dev/tap/tilt
 #+end_src
 
 ** K3d setup

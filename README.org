@@ -1,6 +1,11 @@
 #+title: Kubernetes Local Setup
 #+author: Jimmie Fulton
 
+#+NAME: Insall Docker
+#+begin_src shell
+brew cask install docker
+#+end_src
+
 #+NAME: Install Kind
 #+begin_src shell :results output
 brew install kind

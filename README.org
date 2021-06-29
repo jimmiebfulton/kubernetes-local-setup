@@ -1,11 +1,27 @@
 #+title: Kubernetes Local Setup
 #+author: Jimmie Fulton
 
+** Install XCode Command Line Tools
+
+#+begin_src
+xcode-select --install
+#+end_src
+
+** Install Homebrew
+
+#+NAME: Install Homebrew
+#+begin_src
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+#+end_src
+
+** Install Docker
+   
 #+NAME: Insall Docker
 #+begin_src shell
 brew cask install docker
 #+end_src
 
+** Install Kind
 #+NAME: Install Kind
 #+begin_src shell :results output
 brew install kind
